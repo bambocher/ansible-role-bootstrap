@@ -2,8 +2,8 @@ alpine   ansible_host=10.0.10.10 ansible_user=root
 centos   ansible_host=10.0.10.11 ansible_user=root
 debian   ansible_host=10.0.10.12 ansible_user=root
 fedora   ansible_host=10.0.10.13 ansible_user=root
-gentoo   ansible_host=10.0.10.14 ansible_user=root
+gentoo   ansible_host=10.0.10.14 ansible_user=root ansible_python_interpreter=/usr/bin/python2
 opensuse ansible_host=10.0.10.15 ansible_user=root
 ubuntu   ansible_host=10.0.10.16 ansible_user=root
-arch     ansible_host=10.0.10.17 ansible_user=root
+arch     ansible_host=10.0.10.17 ansible_user=root ansible_python_interpreter=/usr/bin/python2
 oracle   ansible_host=10.0.10.18 ansible_user=root
