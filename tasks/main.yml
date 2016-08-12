@@ -1,0 +1,13 @@
+---
+- name: bootstrap
+  raw: >
+    command -v python2 \
+    || (command -v apt-get && apt-get -qq update && apt-get -qq install python python-apt aptitude) \
+    || (command -v yum && yum -q makecache fast && yum -yq install python) \
+    || (command -v apk && apk add -Uq python) \
+    || (command -v pacman && pacman -Syq --noconfirm python2) \
+    || (command -v emerge && emerge -q --sync && emerge -q -a n =dev-lang/python-2\* gentoolkit) \
+    || (command -v dnf && dnf -q makecache fast && dnf -yq install python python-dnf) \
+    || (command -v zypper && zypper -q refresh && zypper -nq install -l python) \
+    || (echo This platform is not supported. 1>&2 && exit 1)
+

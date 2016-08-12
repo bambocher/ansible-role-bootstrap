@@ -1,0 +1,30 @@
+---
+galaxy_info:
+  author: Dmitry Prazdnichnov
+  description: Ansible role that installs python2 on supported platforms
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: opensuse
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - bootstrap
+    - python
+    - python2
+    - system
+
+dependencies: []
